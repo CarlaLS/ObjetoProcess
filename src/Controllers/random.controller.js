@@ -4,7 +4,7 @@ const randomController = {};
 
 
 randomController.renderRandom =(req, res)=> {
-    let miURL = new URL(`http://3000:8080${req.url}`)
+    let miURL = new URL(`http://127.0.0.1:8080${req.url}`)
     let num = miURL.searchParams.get('cant')
 
     if(num === null){
